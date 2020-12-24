@@ -15,13 +15,18 @@ function stopwatchTime(){
 
     document.getElementById('stopwatchTime').innerHTML = stHours+' : '+stMin+' : '+stSec;
 }
-
-
-function start(){
-    setInterval(stopwatchTime,1000);
+let pause;
+let start = 0;
+function onoff () {
+    if (start === 0){
+        pause = setInterval(stopwatchTime,1000);
+        start ++;
+    }else{
+        clearInterval(pause);
+        start = 0;
+    }
 }
 
-startBtn.addEventListener('click',start);
-stopBtn.addEventListener('click', function(){
-    console.log('hi');
-});
+
+startBtn.addEventListener('click',onoff);
+stopBtn.addEventListener('click', onoff);
