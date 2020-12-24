@@ -15,6 +15,7 @@ function stopwatchTime(){
 
     document.getElementById('stopwatchTime').innerHTML = stHours+' : '+stMin+' : '+stSec;
 }
+//start button,stop button 관련
 let pause;
 let start = 0;
 function onoff () {
@@ -27,6 +28,6 @@ function onoff () {
     }
 }
 
-
 startBtn.addEventListener('click',onoff);
 stopBtn.addEventListener('click', onoff);
+//reset button 관련
