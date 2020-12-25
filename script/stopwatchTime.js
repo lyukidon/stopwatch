@@ -41,7 +41,7 @@ stopBtn.addEventListener('click', onoff);
 function splitTime(){
     let node = document.createElement("LI");
     let textnode = document.createTextNode(
-            TimeObj.Hour+':'+TimeObj.Min+':'+TimeObj.Sec
+            TimeObj.Hour+' : '+TimeObj.Min+' : '+TimeObj.Sec
         );
     node.appendChild(textnode);
     document.getElementById("splitDiv").appendChild(node);
