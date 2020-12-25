@@ -29,14 +29,16 @@ function onoff () {
     if (start === 0){
         pause = setInterval(stopwatchTime,1000);
         start ++;
+        startBtn.innerHTML = '&#10074&#10074';//pause
     }else{
         clearInterval(pause);
         start = 0;
+        startBtn.innerHTML = '&#9654';//play
     }
 }
 
 startBtn.addEventListener('click', onoff);
-stopBtn.addEventListener('click', onoff);
+
 //split button 관련
 function splitTime(){
     let node = document.createElement("LI");
