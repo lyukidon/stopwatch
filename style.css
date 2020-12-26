@@ -1,9 +1,9 @@
-::selection {
-    background-color: rgba(0, 0, 0, 0);
+body{
+    background-color: #F2F2F2;
 }
 #total{
     margin: 0 auto;
-    width: 450px;
+    width: 300px;
     height: 500px;
 }
 .inlineBlock {
@@ -19,7 +19,7 @@
     color: white;
 }
 .borderRadiusBtn{
-    border-radius: 30px;
+    border-radius: 8px;
 }
 #nightMode{
     margin-left: 100px;
@@ -28,18 +28,28 @@
     border: 1px solid grey;
     border-radius: 5px;
 }
+.space{
+    margin-top: 70px;
+}
 #stopwatchTime{
-    margin: 10px;
-    width: 150px;
-    height: 40px;
-    font-size: 30px;
+    padding: 7px;
+    font-size: 50px;
+    border: 1px solid gray;
+    text-align: center;
+}
+#button{
+    margin-top: 7px;
 }
 #startBtn {
     background-color: teal;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    width: 20px;
 }
 #splitBtn{
     background-color: darkcyan;
     margin-left: 10px;
-    padding: 10px 15px;
+    padding: 10px 30px;
+}
+#clearBtn{
+    
 }

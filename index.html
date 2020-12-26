@@ -13,23 +13,32 @@
 
         <div id = 'nightMode' class = 'inlineBlock cursorPointer'>Night Mode</div>
         <div id = 'total'>
+            <div class = 'space'></div>
+
+
             <!-- 시간 박스 -->
-            <div id = 'stopwatchTime' class="inlineBlock">0 : 0 : 0</div>
-            <!-- 시작 버튼 -->
-            <div
-                id = 'startBtn'
-                class='inlineBlock cursorPointer buttonFont borderRadiusBtn'
-            >&#9654</div>
-            <!-- 기록버튼 -->
-            <div
-                id = 'splitBtn'
-                class='inlineBlock cursorPointer buttonFont borderRadiusBtn'
-            >Split</div>
-            <div id = 'splitDiv'></div>
+            <div id = 'stopwatchTime' class="borderRadiusBtn">0 : 0 : 0</div>
+            <div id = 'button'></div>
+                <!-- 시작 버튼 -->
+                <div 
+                    id = 'startBtn'
+                    class='inlineBlock cursorPointer buttonFont borderRadiusBtn'
+                >&#9654</div>
+                <!-- 기록버튼 -->
+                <div
+                    id = 'splitBtn'
+                    class='inlineBlock cursorPointer buttonFont borderRadiusBtn'
+                >Split</div>
+                <div id = 'clearBtn' class='cursorPointer'>Clear</div>
+<!-- &#8635 circle arrow -->
+                <div id = 'splitDiv'></div>
+            </div>
+
         </div>
     
 <script type="text/javascript" src="./script/currentTime.js"></script>
 <script type="text/javascript" src="./script/stopwatchTime.js"></script>
 <script type="text/javascript" src="./script/NightMode.js"></script>
+<script type="text/javascript" src="./script/clearSplit.js"></script>
 </body>
 </html>

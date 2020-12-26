@@ -5,16 +5,10 @@ function NightMode(){
         body.style.backgroundColor = '#1E1E1E';
         body.style.color = '#FFFFFF'
         NigthModeClick++;
-
-        nightMode.style.backgroundColor = '#1E1E1E'
-        nightMode.style.color = '#FFFFFF'
     }else{
-        body.style.backgroundColor = '#ffffff';
+        body.style.backgroundColor = '#F2F2F2';
         body.style.color = '#14171A'
         NigthModeClick--;
-
-        nightMode.style.backgroundColor = '#FFFFFF'
-        nightMode.style.color = '#1E1E1E'
     }
 }
 

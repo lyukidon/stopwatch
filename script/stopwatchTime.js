@@ -27,13 +27,14 @@ let pause;
 let start = 0; //0일때 초기화 1일때 일시정지 2일때 재시작
 function onoff () {
     if (start === 0){
-        pause = setInterval(stopwatchTime,1000);
+        pause = setInterval(stopwatchTime,500);
         start ++;
         startBtn.innerHTML = '&#10074&#10074';//pause
     }else{
         clearInterval(pause);
         start = 0;
         startBtn.innerHTML = '&#9654';//play
+        document.getSelection('li')
     }
 }
 
